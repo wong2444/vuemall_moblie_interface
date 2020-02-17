@@ -1,4 +1,4 @@
-# newmall_mobile
+	A mobile app use `vue` + `vue router` +`vuex` + `axios` + `Mint UI` to build up the mobile web application, backend is using `express`+ `MySQL`. 
 
 ## Project setup
 ```
@@ -10,20 +10,5 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+screen shot<br/>
+![Alt text](./src/assets/1.png)
