@@ -1,7 +1,9 @@
 import {
     ADD_COUNTER,
-    ADD_TO_CART
+    ADD_TO_CART,
+    LOGIN
 } from "./mutation-types";
+import request from '../../http'
 
 export default {
     addCart(context, payload) {
@@ -21,6 +23,13 @@ export default {
             }
         })
 
+    },
+    async login(context, {username, password}) {
+        console.log(this)
+        const {data: res} = await request.post('login', {username, password})
+        if (res.meta.status !== 200) return this.$toast('登入錯誤')
+        context.commit(LOGIN, res.data)
+        return Promise.resolve('登入成功')
     }
 }
 

@@ -4,5 +4,8 @@ export default {
     },
     cartList(state) {
         return state.cartList
+    },
+    getUser(state) {
+        return state.user
     }
 }
